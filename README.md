@@ -1,5 +1,9 @@
 # nixfleet-demo
 
+[![CI](https://github.com/arcanesys/nixfleet-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/arcanesys/nixfleet-demo/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE-MIT)
+[![v0.1.0](https://img.shields.io/github/v/tag/arcanesys/nixfleet-demo?label=version)](https://github.com/arcanesys/nixfleet-demo/releases/tag/v0.1.0)
+
 Reference fleet implementation for [NixFleet](https://github.com/arcanesys/nixfleet)  - 6 persistent QEMU VMs demonstrating every framework scope with production-grade Nix modules.
 
 ## Hosts
