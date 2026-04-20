@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "=== Checking for real SSH keys ==="
+if git diff --cached | grep '^+' | grep -v '^+++' | grep -qE 'ssh-(ed25519|rsa) AAAA[A-Za-z0-9+/]{40,}'; then
+  echo "BLOCKED: real SSH public key detected in staged files."
+  echo "Revert with: git checkout -- <file>"
+  exit 1
+fi
+
+echo "All pre-commit checks passed."
